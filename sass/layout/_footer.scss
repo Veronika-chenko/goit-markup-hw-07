@@ -1,0 +1,115 @@
+.footer {
+    background-color: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-connect {
+    margin-right: 70px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer-logo .accent {
+    color: #ffffff;
+}
+
+.footer-connect-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-connect-link {
+    font-style: normal;
+    @include font(null, 14px, 1.71, 0.03em);
+    color: var(--secondary-footer-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.state-link {
+    color: #ffffff;
+}
+
+.footer-action-text {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-soc-item+.footer-soc-item {
+    margin-left: 10px;
+}
+
+.footer-soc-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #ffffff;
+    transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: #ffffff;
+    }
+}
+
+.footer-form {
+    display: flex;
+    align-items: end;
+    margin-left: auto;
+}
+
+.footer-form-field {
+    width: 358px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.footer-label {
+    display: block;
+}
+
+.footer-input {
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.footer-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-send-icon {
+    margin-left: 10px;
+}
